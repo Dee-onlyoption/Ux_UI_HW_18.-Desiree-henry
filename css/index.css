@@ -1,0 +1,50 @@
+div.flex-container {
+    display: flex; 
+    width: 33%;
+}
+div {
+    display: flex;
+    flex-direction: row;
+}
+section {
+    display: colour#A7633F;
+    opacity: 55%;
+    font-display: colour #EAE2D0;
+    font-style:normal;
+}
+.item{ 
+    grid-area: projectName;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: projectNAme projectName projecttName;
+}
+@media only screen and (max-width:600px) {
+    body { background-color:#250802;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #categoryGrid{
+        margin: 0px 5%;
+        display: grid;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "MOBILE PROTOTYPE AIRIE TRAVEL ITINERARY APP"
+        "MOBILE PROTOTYPE CANADIAN COUNCIL FOR THE ARTS - REDESIGN"
+        "MOBILE PROTOTYPE ADDICTIONS & MENTAL HEALTH ONTARIO - REDESIG"
+      ;
+    }
+    #categoryGrid {
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "Airie App"
+        "Canadian Council Redesign"
+        "AMHO Redesign"
+        ;
+    }
+}
